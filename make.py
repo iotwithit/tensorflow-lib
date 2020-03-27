@@ -178,7 +178,7 @@ def make():
         " && make -f tensorflow/lite/micro/tools/make/Makefile -j" + str(cpus) + " test_person_detection_test"):
             sys.exit("Make Failed...")
 
-    build_target("cortex-m4", __folder__, args, cpus, builddir, libdir)
+    #build_target("cortex-m4", __folder__, args, cpus, builddir, libdir)
     build_target("cortex-m7", __folder__, args, cpus, builddir, libdir)
 
     print("==============================\n Done\n==============================")

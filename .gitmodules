@@ -1,5 +1,5 @@
 [submodule "tensorflow"]
 	path = tensorflow
-	branch = openmv
-	url = https://github.com/openmv/tensorflow.git
+	branch = feature/8bitquantmean
+	url = https://github.com/iotwithit/tensorflow.git 
 

@@ -32,14 +32,14 @@ int libtf_get_output_data_hwc(const unsigned char *model_data, // TensorFlow Lit
 
 // Callback to populate the model input data byte array (laid out in [height][width][channel] order).
 typedef void (*libtf_input_data_callback_t)(void *callback_data,
-                                            unsigned char *model_input,
+                                            float *model_input,
                                             const unsigned int input_height,
                                             const unsigned int input_width,
                                             const unsigned int input_channels);
 
 // Callback to use the model output data byte array (laid out in [height][width][channel] order).
 typedef void (*libtf_output_data_callback_t)(void *callback_data,
-                                             unsigned char *model_output,
+                                             float *model_output,
                                              const unsigned int output_height,
                                              const unsigned int output_width,
                                              const unsigned int output_channels);
